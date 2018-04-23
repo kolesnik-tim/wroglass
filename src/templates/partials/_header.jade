@@ -1,5 +1,5 @@
 //BEGIN header
-header.header
+header.header(class=headerClass)
   .container
     .menu-open
       span
@@ -22,7 +22,7 @@ header.header
             a(href="#")
               i.fas.fa-envelope-open
               | Poproś o ofertę
-.header-toolbar
+.header-toolbar(class=toolbarClass)
   .container
     .row.middle-xs
       .col-md-4.col-xs-12
@@ -33,10 +33,10 @@ header.header
       .col-md-8.col-sm-12
         nav
           ul
-            li.active
-              a(href="#") Strona główna
             li
-              a(href="#") Oferta
+              a(href="index.html") Strona główna
+            li
+              a(href="content.html") Oferta
             li
               a(href="#") Referencje
             li
@@ -51,9 +51,9 @@ header.header
     span
   ul
     li
-      a(href="#") Strona główna
-    li.active
-      a(href="#") Oferta
+      a(href="index.html") Strona główna
+    li
+      a(href="content.html") Oferta
     li
       a(href="#") Referencje
     li

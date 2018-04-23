@@ -3,6 +3,8 @@
   padding: 10px 0
   background: #e8e6ea
   position: relative
+  &__page
+    background: #faf8f8
   .menu-open
     width: 40px
     height: 30px
@@ -87,6 +89,16 @@
   width: 100%
   padding: 40px 0
   position: absolute
+  &.toolbar
+    background: #fcfcfc
+    position: relative
+    nav
+      li:nth-child(1) a
+        color: $slate-grey
+        cursor: pointer
+      li:nth-child(2) a
+        color: $bluey-purple
+        cursor: default
   &__logo
     display: flex
     align-items: center
@@ -124,9 +136,12 @@
       justify-content: space-between
       li
         display: inline-block
-        &.active
+        &:nth-child(1)
           a
             color: $bluey-purple
+            cursor: default
+            &:hover
+              color: $bluey-purple
         a
           color: $slate-grey
           font-size: 16px
@@ -135,4 +150,4 @@
           text-transform: uppercase
           padding-bottom: 4px
           &:hover
-            color: $lipstick-two
+            color: $bluey-purple

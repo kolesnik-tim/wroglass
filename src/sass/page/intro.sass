@@ -1,13 +1,35 @@
 .intro
-  padding-top: 30px
-  padding-bottom: 60px
-  h1
-    font-size: 36px
-    font-weight: bold
-    color: $slate-grey
-    padding-bottom: 30px
-  p
-    font-size: 14px
-    color: $slate-grey
-    line-height: 1.22
-    padding-bottom: 15px
+  padding-top: 230px
+  padding-bottom: 500px
+  background: url('../img/intro--bg.png') no-repeat
+  background-size: cover
+  &__head
+    display: flex
+    flex-direction: column
+    align-items: center
+    h1
+      font-size: 39.6px
+      font-weight: bold
+      text-transform: uppercase
+      line-height: 1.79
+      color: $slate-grey
+      padding-bottom: 25px
+    p
+      color: $slate-grey
+      font-size: 16px
+      line-height: 1.07
+      max-width: 640px
+      padding-bottom: 40px
+  &__btn
+    a
+      padding: 15px 17px
+      display: inline-block
+      color: $bluey-purple
+      font-size: 16px
+      line-height: 1.07
+      border: 1px solid $bluey-purple
+      box-shadow: 0px 2px 10px 0 rgba(49, 47, 47, 0.16)
+      &:hover
+        color: $bluey-purple
+      i
+        padding-right: 10px

@@ -1,0 +1,75 @@
+.examples
+  padding-top: 100px
+  padding-bottom: 90px
+  +r(767)
+    padding: 0 40px
+  &--none
+    display: none
+    margin-bottom: 50px
+  &__block
+    background-repeat: no-repeat
+    background-size: cover
+    min-height: 440px
+    margin-bottom: 15px
+    margin: 0 7px
+    display: flex
+    align-items: flex-end
+    box-shadow: 0px 10px 20px 0 rgba(49, 47, 47, 0.16)
+    margin-bottom: 30px
+    +r(1024)
+      min-height: 440px
+    +r(767)
+      min-height: auto
+    a
+      background: rgba(140, 89, 203, 0.4)
+      width: 100%
+      min-height: 230px
+      padding: 20px 10px 10px 30px
+    h3
+      font-size: 32px
+      font-weight: 500
+      color: $white
+      letter-spacing: 0.8px
+      position: relative
+    span
+      display: block
+      color: $pinkish-grey
+      font-size: 32px
+      font-weight: 500
+      letter-spacing: 0.8px
+    p
+      font-size: 16px
+      letter-spacing: 0.4px
+      font-weight: 500
+      color: $white
+      padding-top: 30px
+  &__btn
+    padding-top: 40px
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+
+    width: 100%
+    +r(767)
+      padding-bottom: 40px
+    p
+      letter-spacing: 0.4px
+      color: $slate-grey
+      font-size: 16px
+      padding-right: 35px
+      position: absolute
+      left: 9%
+    a
+      color: $bluey-purple
+      font-size: 16px
+      font-weight: 500
+      display: block
+      padding: 17px
+      border-radius: 4px
+      box-shadow: 0px 2px 10px 0 rgba(49, 47, 47, 0.16)
+      border: solid 1px $bluey-purple
+      position: relative
+      i
+        font-size: 16px
+        padding-right: 12px

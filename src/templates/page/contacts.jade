@@ -1,0 +1,55 @@
+section.contacts#contacts
+  .contacts--mobile
+    a(href="#")
+      i.fas.fa-envelope-open
+      | Poproś o oferte
+  form.contacts__call.wow.zoomInDown(data-wow-offset="40" data-wow-duration="1.4s")
+    .container
+      .contacts__call__block
+        p     
+          a(href="#")
+            i.fas.fa-question-circle
+          | Pytania? Zostaw telefon, a oddzwonimy: 
+        .contacts__call__block__btn
+          input(type="tel" placeholder="53 55987 54 215" id='phone')
+          input(type="submit" id="phon__btn" value="")
+          label(for="phon__btn")
+            i.fas.fa-arrow-alt-circle-right
+  .container
+    .contacts__block  
+      .row
+        .col-sm-4.col-xs-12
+          .row
+            .col-xs-12.center-xs.start-sm
+              .contacts__block__logo
+                img(src="img/logo-grey.png", alt="")
+                h2 wroglass
+                  p USŁUGI SZKLARSKIE
+            .col-xs-6.col-sm-12.col-xs-6
+              .contacts__block__phon
+                a(href="tel:0048662202167") 00 48 662 202 167
+                  i.fas.fa-phone.wow.swing(data-wow-offset="40" data-wow-duration="1.7s" data-wow-iteration="infinite")
+                a(href="mailto:info@wroglass.pl") info@wroglass.pl
+            .col-xs-6.col-sm-12.col-xs-6
+              .contacts__block__location
+                i.fas.fa-map-marker-alt.wow.pulse(data-wow-offset="40" data-wow-iteration="infinite")
+                p ul. Północna 24/14, Wrocław
+                  span Pon. - Piąt.: 9-19
+                  a(href="#") mapa dojazdu
+            .col-sm-12.col-xs-12
+              .contacts__block__social
+                a(href="#")
+                  i.icon.icon-facebook
+                a(href="#")
+                  i.icon.icon-insta
+        .col-sm-7.col-sm-offset-1
+          form.form
+            input(type="text" placeholder="Imię")
+            input(type="email" placeholder="Email")
+            textarea(placeholder="twoja wiadomość")
+            .form__btn
+              p Odpowiemy w ciągu 24 godzin:
+              input(type="submit" id="form__btn" )
+              label(for="form__btn")
+                i.fas.fa-arrow-alt-circle-right
+                |  Wysłać

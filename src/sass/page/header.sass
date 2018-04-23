@@ -1,0 +1,236 @@
+.header
+  width: 100%
+  border-bottom: 1px solid $lipstick
+  padding: 30px 0
+  background: $black
+  &__page
+    background-image: linear-gradient(to right, #212525, #2e3636 50%, #212525)
+  +r(767)
+    padding-left: 70px
+    padding-right: 20px
+    position: fixed
+    z-index: 99
+  +r(360)
+    padding-left: 30px
+  .menu-open
+    width: 40px
+    height: 30px
+    padding-top: 15px
+    position: absolute
+    display: inline-block
+    cursor: pointer
+    top: 0px
+    left: -40px
+    transition: all 0.3s
+    display: none
+    +r(767)
+      display: block
+    +r(360)
+      left: -20px
+    span
+      width: 25px
+      height: 4px
+      background: $white
+      display: block
+      transition: all 0.3s
+      border-radius: 20%
+      &:before
+        content: ''
+        position: absolute
+        left: 0
+        width: 25px
+        height: 4px
+        background: $white
+        transition: all 0.3s
+        top: 6px
+        border-radius: 20%
+      &:after
+        content: ''
+        position: absolute
+        left: 0
+        bottom: 2px
+        width: 25px
+        height: 4px
+        background: $white
+        transition: all 0.3s
+        border-radius: 20%
+  &__block
+    display: flex
+    +r(1024)
+      justify-content: center
+    +r(767)
+      justify-content: flex-start
+    &__logo
+      +r(1024)
+        margin-bottom: 40px
+      +r(767)
+        margin-bottom: 0
+      h2
+        font-family: 'Informal011 BT'
+        color: $lipstick-two
+        font-size: 37.5px
+        font-weight: 900
+        line-height: 0.98
+        letter-spacing: 0.9px
+        position: relative
+        display: inline-block
+        +r(767)
+          font-size: 28px
+        span
+          color: $white
+        p
+          font-size: 9.6px
+          font-weight: 500
+          color: $pinkish-grey-three
+          letter-spacing: 0.2px
+          position: absolute
+          right: 5px
+          +r(767)
+            font-size: 7px
+    &__phone
+      display: flex
+      flex-direction: column
+      position: relative
+      padding: 0 45px
+      padding-right: 25px
+      &:before
+        content: ''
+        position: absolute
+        width: 1px
+        height: 60px
+        background: $lipstick-two
+        right: 0
+        top: -10px
+      +r(767)
+        display: none
+      &--mobile
+        display: none
+        i
+          color: $lipstick-two
+          font-size: 26px
+        +r(767)
+          display: block
+        
+      i
+        position: absolute
+        color: $lipstick-two
+        font-size: 26px
+        left: -5px
+        top: 7px
+      a
+        font-weight: normal
+        color: $silver
+        &:hover
+          color: $lipstick-two
+      a:nth-child(2)
+        font-size: 16px
+        font-weight: 500
+        color: $gunmetal
+        padding-top: 5px
+        &:hover
+          color: $lipstick-two
+    &__location
+      display: flex
+      flex-direction: column
+      position: relative
+      padding-left: 70px
+      +r(767)
+        display: none
+      i
+        position: absolute
+        color: $lipstick-two
+        font-size: 28px
+        left: 30px
+        top: 7px
+      a
+        font-size: 16px
+        color: $cool-grey
+        &:hover
+          color: $lipstick-two
+          p
+            color: $lipstick-two
+        p
+          color: $gunmetal
+          padding-top: 5px
+          transition: all 0.3s
+    &__btn
+      +r(767)
+        display: none
+      a
+        padding: 15px 17px
+        background: $lipstick
+        display: inline-block
+        color: $white
+        font-size: 15px
+        line-height: 1.07
+        border: 1px solid $lipstick-two
+        +r(1130)
+          width: 165px
+          padding: 15px 10px
+        &:hover
+          color: $lipstick-two
+          background: none
+          i
+            color: $lipstick-two
+        i
+          padding-right: 10px
+.toolbar
+  background: #fbfbfb
+  nav
+    a
+      color: $black !important
+      &:hover
+        color: $lipstick-two !important
+    li:nth-child(2) a
+      border-bottom: 1px solid $lipstick-two
+      color: $lipstick-two !important
+  .header-toolbar__location a, .header-toolbar__phone a
+    +r(767)
+      color: $black !important
+.header-toolbar
+  width: 100%
+  position: absolute
+  z-index: 12
+  &--mobile
+    display: none
+    position: absolute
+    left: 85px
+    z-index: 9
+    top: 90px
+    +r(767)
+      display: block
+    +r(440)
+      left: 30px
+  &__phone
+    padding: 12px 0
+    a
+      font-size: 14px
+      color: $white
+      i
+        color: $lipstick-two
+        font-size: 15px
+        padding-right: 10px
+  &__location
+    a
+      font-size: 14px
+      color: $white
+      i
+        color: $lipstick-two
+        font-size: 15px
+        padding-right: 10px
+  nav
+    +r(767)
+      display: none
+    li
+      display: inline-block
+      padding: 20px 0
+      padding-right: 50px
+    a
+      color: $white
+      font-size: 16px
+      font-weight: 500
+      display: inline-block
+      text-transform: uppercase
+      padding-bottom: 4px
+      &:hover
+        color: $lipstick-two

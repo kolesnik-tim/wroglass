@@ -1,25 +1,24 @@
 .contacts
   padding-bottom: 80px
   +r(767)
-    padding-top: 30px
-    border-top: 1px solid $lipstick
+    border-top: 1px solid $bluey-purple
     padding-bottom: 0
   &--mobile
     display: flex
     justify-content: center
     position: relative
-    top: -55px
+    top: -25px
     display: none
     +r(767)
       display: flex
     a
       padding: 15px 17px
-      background: $lipstick
+      background: $bluey-purple
       display: inline-block
       color: $white
       font-size: 16px
       line-height: 1.07
-      border: 1px solid $lipstick-two
+      border: 1px solid $bluey-purple
       i
         padding-right: 10px
   &__call
@@ -194,7 +193,7 @@
           color: $bluey-purple
     form
       +r(767)
-        display: none
+        padding-bottom: 40px
       input
         font-size: 15.7px
         font-weight: 500  
@@ -208,8 +207,13 @@
       input[type="text"]
         width: 48.7%
         margin-right: 10px
+        +r(470)
+          width: 100%
+          margin-bottom: 10px
       input[type="email"]
         width: 48.7%
+        +r(470)
+          width: 100%
       textarea
         font-size: 15.7px
         font-weight: 500  
@@ -233,6 +237,11 @@
         align-items: center
         p
           padding-right: 25px
+          color: $slate-grey
+          font-size: 16px
+          letter-spacing: 0.4px
+          +r(470)
+            display: none
         input
           display: none
         label

@@ -4,48 +4,62 @@ header.header
     .menu-open
       span
     .row
-      .col-md-2.col-sm-4.end-sm
+      .col-xs-12
         .header__block
+          a(href="tel:+48662202167").tel
+            i.fas.fa-phone.wow.swing(data-wow-offset="40" data-wow-duration="1.7s" data-wow-iteration="infinite")
+            | +48 66 220 21 67
+          a(href="mailto:info@wroglass.pl")
+            i.fas.fa-envelope-open
+            | info@wroglass.pl
+          a(href="#")
+            i.fas.fa-map-marker-alt.wow.pulse(data-wow-offset="40" data-wow-iteration="infinite")
+            | Wroclaw, Robotnicza 6
+          a(href="#")
+            i.fas.fa-clock
+            | Poniedziałek - Piątek: 9-19
           .header__block__btn
             a(href="#")
               i.fas.fa-envelope-open
-              | Poproś o oferte
+              | Poproś o ofertę
 .header-toolbar
   .container
-    .header-toolbar--mobile
-      .header-toolbar__phone
-        a(href="tel:0048662202167")
-          i.fas.fa-phone
-          | 00 48 662 202 167
-      .header-toolbar__location
-        a(href="#")
-          i.fas.fa-map-marker-alt
-          | ul. Północna 24/14, Wrocław
-    nav
-      ul
-        li
-          a(href="#") O firmie
-        li
-          a(href="content.html") Oferta
-        li
-          a(href="#examples") Realizacje
-        li
-          a(href="#reviews") Galeria
-        li
-          a(href="#contacts") Kontakt 
+    .row.middle-xs
+      .col-md-4.col-xs-12
+        .header-toolbar__logo
+          img(src="img/logo.png", alt="")
+          h2 wroglass
+            p USŁUGI SZKLARSKIE
+      .col-md-8.col-sm-12
+        nav
+          ul
+            li
+              a(href="#") Strona główna
+            li.active
+              a(href="#") Oferta
+            li
+              a(href="#") Referencje
+            li
+              a(href="#") promocje
+            li
+              a(href="#") Galeria
+            li
+              a(href="#") Kontakt 
 .menu--bg
 .menu__mobile#menu
   .close
     span
   ul
     li
-      a(href="#") O firmie
+      a(href="#") Strona główna
+    li.active
+      a(href="#") Oferta
     li
-      a(href="content.html") Oferta
+      a(href="#") Referencje
     li
-      a(href="#examples") Realizacje
+      a(href="#") promocje
     li
-      a(href="#reviews") Galeria
+      a(href="#") Galeria
     li
-      a(href="#contacts") Kontakt 
+      a(href="#") Kontakt 
 //END header

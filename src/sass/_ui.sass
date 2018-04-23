@@ -9,7 +9,7 @@ body
 	box-sizing: border-box
 	width: 100% !important
 	height: 100%
-	max-width: 1140px
+	max-width: 1150px
 	position: relative
 	padding: 0 15px
 .row
@@ -19,90 +19,6 @@ body
 a
 	text-decoration: none
 	transition: all 0.3s
-.bg--examples
-	background: url('../img/examples--bg.png') no-repeat
-  background-size: cover
-  background-position: 0 20%
-.heading
-	position: relative
-	h2
-		font-size: 45px
-		font-weight: 500
-		color: $charcoal-grey
-		text-transform: uppercase
-		padding: 0 35px
-		margin-bottom: 35px
-		position: relative
-		background: #fcfcfc
-		z-index: 3
-		display: inline-block
-		+r(767)
-			padding: 0
-			background: none
-			font-size: 30px
-			margin-bottom: 15px
-	&__line
-		width: 100%
-		height: 2px
-		background: $blue-green
-		position: absolute
-		left: 0
-		top: 25px
-		z-index: 1
-		+r(767)
-			display: none
-	p
-		font-size: 20px
-		font-weight: 500
-		color: $greyish
-		padding-bottom: 64px
-		br
-			+r(767)
-				display: none
-		+r(767)
-			font-size: 15px
-			padding: 0 10px
-			padding-bottom: 35px
-	&--reviews
-		h2
-			background: none
-			display: block
-			&:before
-				content: ''
-				position: absolute
-				left: 0
-				top: 25px
-				height: 1px
-				width: 100%
-				max-width: 360px
-				background: $blue-green
-				+r(1100)
-					max-width: 330px
-				+r(1024)
-					max-width: 250px
-				+r(870)
-					max-width: 200px
-				+r(767)
-					display: none
-			&:after
-				content: ''
-				position: absolute
-				right: 0
-				top: 25px
-				height: 1px
-				width: 100%
-				max-width: 360px
-				background: $blue-green
-				+r(1100)
-					max-width: 330px
-				+r(1024)
-					max-width: 250px
-				+r(870)
-					max-width: 200px
-				+r(767)
-					display: none
-		.heading__line
-			display: none
 input::-webkit-inner-spin-button, input::-webkit-outer-spin-button
 	-webkit-appearance: none
 	margin: 0

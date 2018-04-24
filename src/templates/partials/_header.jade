@@ -1,9 +1,9 @@
 //BEGIN header
-header.header(class=headerClass)
+.header-toolbar(class=toolbarClass)
   .container
     .row
       .col-xs-12
-        .header__block
+        .header-toolbar__block
           a(href="tel:+48662202167")
             i.fas.fa-phone.wow.swing(data-wow-offset="40" data-wow-duration="1.7s" data-wow-iteration="infinite")
             | +48 66 220 21 67
@@ -16,11 +16,11 @@ header.header(class=headerClass)
           a(href="#")
             i.fas.fa-clock
             | Poniedziałek - Piątek: 9-19
-          .header__block__btn
+          .header-toolbar__block__btn
             a(href="#")
               i.fas.fa-envelope-open
               | Poproś o ofertę
-.header-toolbar(class=toolbarClass)
+header.header(class=headerClass)
   .container
     a(href="tel:+48662202167").tel
       i.fas.fa-phone.wow.swing(data-wow-offset="40" data-wow-duration="1.7s" data-wow-iteration="infinite")
@@ -28,7 +28,7 @@ header.header(class=headerClass)
       span
     .row.middle-xs
       .col-md-4.col-xs-12
-        .header-toolbar__logo
+        .header__logo
           img(src="img/logo.png", alt="")
           h2 wroglass
             p USŁUGI SZKLARSKIE

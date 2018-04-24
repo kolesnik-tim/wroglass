@@ -1,22 +1,24 @@
-.header
+.header-toolbar
   width: 100%
   padding: 10px 0
   background: #e8e6ea
   position: relative
+  &.toolbar
+    background: #faf8f8
+    +r(767)
+      background: none
   +r(767)
     position: absolute
     top: 80px
     background: none
-  &__page
-    background: #faf8f8
   &__block
     display: flex
     justify-content: space-between
     align-items: center
     +r(767)
       justify-content: space-around
-    +r(470)
-      justify-content: flex-end
+    +r(430)
+      flex-direction: column
     a
       font-size: 16px
       font-weight: 500
@@ -30,8 +32,8 @@
           display: none
         &:nth-child(4)
           display: block
-      +r(470)
-        display: none
+      +r(430)
+        margin-bottom: 15px
       i
         font-size: 16px
         padding-right: 15px
@@ -54,10 +56,20 @@
           background: none
         i
           padding-right: 10px
-.header-toolbar
+.header
   width: 100%
   padding: 40px 0
   position: absolute
+  &__page
+    background: #fcfcfc
+    position: relative
+    nav
+      li:nth-child(1) a
+        color: $slate-grey !important
+        cursor: pointer !important
+      li:nth-child(2) a
+        color: $bluey-purple
+        cursor: default
   +r(767)
     padding: 20px 0
     background: #dddce4
@@ -110,16 +122,6 @@
         background: $battleship-grey-two
         transition: all 0.3s
         border-radius: 20%
-  &.toolbar
-    background: #fcfcfc
-    position: relative
-    nav
-      li:nth-child(1) a
-        color: $slate-grey
-        cursor: pointer
-      li:nth-child(2) a
-        color: $bluey-purple
-        cursor: default
   &__logo
     display: flex
     align-items: center

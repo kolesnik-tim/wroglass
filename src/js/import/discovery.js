@@ -11,9 +11,9 @@ $('[data-all]').on('click', function() {
 //             МОБИЛЬНЫЕ
 $(window).on('load resize', function() {
   if ($(window).width() <= '767') {
-    $('.offers--none').find('.row').prepend($('.offers--block .offers--none-mobile'));
+    $('.offers--none').children('.row').prepend($('.offers--block .offers--none-mobile'));
   } else {
-    $('.offers--block').append($('.offers--none .offers--none-mobile'));
+    $('.offers--block').find('.row').append($('.offers--none .offers--none-mobile'));
   }
 });
 

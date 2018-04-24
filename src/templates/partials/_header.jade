@@ -1,12 +1,10 @@
 //BEGIN header
 header.header(class=headerClass)
   .container
-    .menu-open
-      span
     .row
       .col-xs-12
         .header__block
-          a(href="tel:+48662202167").tel
+          a(href="tel:+48662202167")
             i.fas.fa-phone.wow.swing(data-wow-offset="40" data-wow-duration="1.7s" data-wow-iteration="infinite")
             | +48 66 220 21 67
           a(href="mailto:info@wroglass.pl")
@@ -24,6 +22,10 @@ header.header(class=headerClass)
               | Poproś o ofertę
 .header-toolbar(class=toolbarClass)
   .container
+    a(href="tel:+48662202167").tel
+      i.fas.fa-phone.wow.swing(data-wow-offset="40" data-wow-duration="1.7s" data-wow-iteration="infinite")
+    .menu-open
+      span
     .row.middle-xs
       .col-md-4.col-xs-12
         .header-toolbar__logo

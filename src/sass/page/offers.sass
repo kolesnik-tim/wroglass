@@ -1,5 +1,7 @@
 .offers
   padding-bottom: 90px
+  +r(767)
+    padding-bottom: 50px
   &--none
     display: none
     margin-bottom: 50px
@@ -7,25 +9,37 @@
   &__content
     margin-bottom: 30px
   &__block
-    height: 100%
     padding: 110px 0
     background-repeat: no-repeat
     background-size: cover
     margin: 8px
+    margin-bottom: 20px
+    +r(767)
+      background-position: 50%, 50%
     &--radius1
       border-bottom-left-radius: 25px
+      +r(1024)
+        border-radius: 0
     &--radius2
       border-top-right-radius: 25px
+      height: 95.5%
+      +r(1024)
+        border-radius: 0
     &__btn--1
       background: $light-indigo
+      width: 195px
     &__btn--2
       background: $ugly-purple
+      width: 250px
     &__btn--3
       background: $salmon
+      width: 325px
     &__btn--4
       background: $pastel-red-two
+      width: 205px
     &__btn--5
       background: $carnation
+      width: 200px
     a
       padding: 18px 20px
       font-size: 16px
@@ -36,7 +50,6 @@
       border-radius: 25px
       position: relative
       left: -15px
-      width: 55%
       display: flex
       justify-content: flex-end
   &__btn
@@ -45,8 +58,9 @@
     justify-content: center
     align-items: center
     position: relative
-
     width: 100%
+    +r(1024)
+      flex-direction: column
     +r(767)
       padding-bottom: 40px
     p
@@ -56,6 +70,11 @@
       padding-right: 35px
       position: absolute
       left: 9%
+      +r(1024)
+        position: relative
+        left: 0
+        padding-right: 0
+        padding-bottom: 20px
     a
       color: $bluey-purple
       font-size: 16px
